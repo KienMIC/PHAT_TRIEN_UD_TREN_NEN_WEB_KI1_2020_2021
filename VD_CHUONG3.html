@@ -166,6 +166,42 @@ sơ và giấy báo này.
         <INPUT type = “text” id = “lastname”> <BR><BR>
         </P>
         </FORM>
+    <hr><p></p>
+    <h2>Ví dụ 3.12: </h2>
+    <H1><CENTER><FONT size = 4 color = hotpink> Application Form</FONT></CENTER></H1>
+    <HR><BR>
+    <FORM ACTION = “http://www.mysite.com/FormSite” METHOD = POST>
+    <P>
+    <LABEL for = “name”> Name: </LABEL>
+    <INPUT type = “text” id = “name”> <BR>
+    <P> Area of Interest
+    <BR><BR>
+    <INPUT TYPE=RADIO NAME=“CONTROL1” VALUE=0 CHECKED> Web Designer
+    <INPUT TYPE=RADIO NAME=“CONTROL1” VALUE=1> Web Administrator
+    <INPUT TYPE=RADIO NAME=“CONTROL1” VALUE=2> Web Developer
+    <P> Experience
+    <SELECT NAME=”CONTROL2”>
+    <OPTION> None </OPTION>
+    <OPTION> 1 year </OPTION>
+    <OPTION> 2 years </OPTION>
+    <OPTION> 3 years </OPTION>
+    </SELECT>
+    <BR>
+    <P> Comments
+    <BR>
+    <TEXTAREA NAME=”CONTROL3” COLS=”30” ROWS=”5”> Type your comments here </TEXTAREA>
+    <BR>
+    <P><INPUT NAME=”CONTROL4” TYPE=CHECKBOX CHECKED> Send acknowledgement
+    <BR>
+    <P><INPUT TYPE=SUBMIT VALUE=OK>
+    <INPUT TYPE=RESET VALUE=RESET>
+    </FORM>
+<hr><p></p>
+    <h2>Ví dụ 3.13: </h2>
+    <FRAMESET COLS=”50%,*”>
+        <FRAME SRC=x.html>
+        <FRAME SRC=y.html>
+        </FRAMESET>
 
 </body>
 </html>
