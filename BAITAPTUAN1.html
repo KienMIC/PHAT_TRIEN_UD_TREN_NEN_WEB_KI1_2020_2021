@@ -1,0 +1,116 @@
+YÊU CẦU: ĐỌC TÀI LIỆU VÀ GIẢI THÍCH Ý NGHĨA CỦA CÁC ĐOẠN CODE SAU ĐÂY:
+
+Code #1
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* This stylesheet sets the width of all images to 100%: */
+img {
+  width: 100%; /*Thiết lập độ rộng toàn bộ ảnh trong site là 100%*/
+}
+</style>
+</head>
+<body>
+
+<h2>Styling Images</h2> <!--Tiêu đề H2-->
+<p>The image below has the width attribute set to 128 pixels, but the stylesheet overrides it, and sets the width to 100%.</p>
+<img src="html5.gif" alt="HTML5 Icon" width="128" height="128"> <!--Chèn ảnh có tên html5.gif với nội dung khi trỏ chuột vào là HTML5 Icon, độ rộng 128 px, chiều cao 128px-->
+
+<p>The image below uses the style attribute, where the width is set to 128 pixels which overrides the stylesheet:</p>
+<img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"><!--Chèn ảnh có tên html5.gif với nội dung khi trỏ chuột vào là HTML5 Icon, độ rộng 128 px, chiều cao 128px-->
+
+</body>
+</html>
+Code #2
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Image Links</h2> <!--Tiêu đề H2-->
+
+<p>The image is a link. You can click on it.</p> <!--Đoạn văn-->
+
+<a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0"> <!--Gán link vào ảnh, khi click vào ảnh thì sẽ dẫn tới default.asp, 
+ảnh là file smiley.gif,có độ rộng là 42px, chiều cao là 42px, độ dày viền là 0 -->
+</a>
+
+<p>We have added "border:0" to prevent IE9 (and earlier) from displaying a border around the image.</p> <!--Đoạn văn-->
+
+</body>
+</html>
+Code #3
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black; // Viền có độ lớn 1 pixel, màu đen
+  border-collapse: collapse; //Viền các ô bên trong chung với viền ngoài của bảng
+}<!--Khai báo kiểu cho table, table heading và nội dung trong bảng-->
+th, td {
+  padding: 5px; // Độ lớn các ô trong bảng là 5px
+  text-align: left; // Nội dung bên trong các ô được căn trái 
+}  <!--Định dạng table heading và nội dung trong bảng, -->
+</style>
+</head>
+<body>
+
+<h2>Table Caption</h2>
+<p>To add a caption to a table, use the caption tag.</p>
+
+<table style="width:100%"> // Định kiểu cho bảng, độ rộng là 100%
+  <caption>Monthly savings</caption> //Dòng chú thích cho bảng
+  <tr>//Table row - Hàng 1
+    <th>Month</th> //Table Heading cột 1
+    <th>Savings</th> // Cột 2
+  </tr>
+  <tr>//Hàng 2
+    <td>January</td>//Nội dung cột 1
+    <td>$100</td> //Nội dung cột 2
+  </tr>
+  <tr>//Hàng 3
+    <td>February</td>//Nội dung cột 1
+    <td>$50</td>//Nội dung cột 2
+  </tr>
+</table>
+
+</body>
+</html>
+Code #4
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php//Code php
+$txt = "Hello world!"; //Khai báo biến txt, gán nội dung : Hello World
+$x = 5; //Khai báo biến x, gán giá trị bằng 5
+$y = 10.5; //Khai báo biến y, gán giá trị bằng 10.5
+
+echo $txt; //In nội dung biến txt ra màn hình
+echo "<br>";//Xuống dòng
+echo $x;//In giá trị x
+echo "<br>";//Xuống dòng
+echo $y;//In giá trị y
+?>
+
+</body>
+</html>
+
+
+
+Code #5
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$txt = "W3Schools.com";//Khai báo biến txt và gán nội dung là W3Schools
+echo "I love " . $txt . "!"; //In dòng chữ I love.W3Schools.com!
+?>
+
+</body>
+</html>
+Nguồn: w3schools.com
+

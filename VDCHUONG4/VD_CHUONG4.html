@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VD CHƯƠNG 4</title>
+</head>
+<body>
+    <h2>Ví dụ 4.1:</h2>
+    <P style = "color: aqua; font-style:italic; text-align:center;"> This paragraph has an inline style applied to it
+    <BR>
+    <P> This paragraph is displayed in the default style
+    <BR>
+    <P> Can you see the <SPAN style=color:red> difference </SPAN> in this line?
+    <hr><p></p>
+
+    <h2>Ví dụ 4.2: </h2>
+    <STYLE TYPE="text/css">
+    H1 {color: limegreen}
+    H1 {font-family: Arial}
+    H2 {color:limegreen}
+    H2 {font-family: Arial}
+    </STYLE>
+    <H1> This is the H1 element </H1>
+    <H2> This is the H2 element </H2>
+    <H3> This is the H3 element with its default style as displayed in the browser</H3>
+    <hr><p></p>
+    <h2>Ví dụ 4.3: </h2>
+    <STYLE TYPE="text/css">
+    H1, H2 {color: limegreen; font-family:Arial;}
+    </STYLE>
+    <H1> This is the H1 element </H1>
+    <H2> This is the H2 element </H2>
+    <H3> This is the H3 element with its default style as displayed in the browser</H3>
+    <hr><p></p>
+    <h2>Ví dụ 4.4:</h2>
+    <STYLE TYPE="text/css">
+    P{font-style:italic;font-weight:bold; color:limegreen}
+    </STYLE>
+    <P> These selectors use the name of HTML elements. The only difference is that you remove the brackets. </P>
+    <hr><p></p>
+    <h2>Ví dụ 4.5:</h2>
+    <STYLE TYPE="text/css">
+    .water {color:blue}
+    .danger {color:red}
+    </STYLE>
+    <P class=water>test water
+    <P class=danger>test danger
+    <P> no style
+    <BR>
+    <EM class=danger>italic</EM>
+    <hr><p></p>
+    <h2>Ví dụ 4.6: </h2>
+    <STYLE TYPE="text/css">
+    P.BLUE {color:blue; font-weight:bold;}
+    H5.RED {color:red; font-weight:bold;}
+    </STYLE>
+    <H5 CLASS=RED> This is an H5 element that uses the RED class </H5>
+    <BODY>
+    <P class=blue>This paragraph uses the class BLUE </P>
+    <P>This paragraph does not use the class BLUE </P>
+    <hr><p></p>
+    <h2>Ví dụ 4.7: </h2>
+    <STYLE TYPE="text/css">
+        #control {color:red}
+    </STYLE>
+    <P id="control"> Fire is of this color
+    <BR>
+    <P>This paragraph has no style applied
+    <hr><p></p>
+    <h2>Ví dụ 4.8: </h2>
+    <STYLE TYPE="text/css">
+        .forest {color:green}
+        .danger {color:red}
+        #control {color:blue}
+    </STYLE>
+    <P class=forest>green things
+    <P class=danger>fire hazards </P>
+    <EM class=forest> more green things </EM>
+    <BR>
+    <EM class=danger>more fire hazards </EM>
+    <UL>
+    <LI class=danger>things that burn
+    <LI class=forest>things that don't burn
+    </UL>
+    <P id=control>water
+    <hr><p></p>
+    <h2>Ví dụ 4.9:</h2>
+    <STYLE TYPE="text/css">
+    BODY {color:blue; background:lavender;
+    font-family:Arial;}
+    UL {color:red}
+    </STYLE>
+    <UL>
+        <LI> mangoes
+        <LI> oranages
+        <LI> apples
+    </UL>
+    <OL>
+        <LI> mangoes
+        <LI> oranages
+        <LI> apples
+    </OL>
+    <h2>Ví dụ 4.10: </h2>
+    <LINK REL=STYLESHEET TYPE="text/css" HREF="sheet1.css">
+        <H2> This is a H2 element </H2>
+    <BR>
+        <P>This is a paragraph
+        <hr><p></p>
+</body>
+</html>
