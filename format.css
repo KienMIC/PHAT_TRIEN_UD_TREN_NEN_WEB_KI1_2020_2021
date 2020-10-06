@@ -1,0 +1,16 @@
+@charset "utf-8";
+body{
+	margin: 30px;
+}
+
+#vidu_tranform_scale{
+	width:100px;
+	height:100px;
+	background-color:#F90;
+	transition:5s
+}
+#vidu_tranform_scale:hover{
+	transform:rotate(90deg);
+	animation-iteration-count: infinite;
+}
+
