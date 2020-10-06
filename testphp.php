@@ -12,6 +12,26 @@
 	b = <input type="text" name="b" id = "b">
 	<button onclick="tong(a,b)">TINH TONG</button>
 	<button onclick="tongdayso"></button>
+
+	<form name = "FormChon">
+		<P><B>Chọn loại nhạc bạn muốn: </B></P>
+		<br>
+
+		<SELECT NAME = "LoaiNhac" MULTIPLE>
+		
+		<OPTION>RnB</OPTION>
+		<OPTION>Jazz</OPTION>
+		<OPTION>Blues</OPTION>
+		<OPTION>New Age</OPTION>
+		<OPTION>Classical</OPTION>
+		<OPTION>Opera</OPTION>
+
+		</SELECT>
+		<P></P>
+		<INPUT TYPE = "button" Value = "Xác nhận" onClick = "alert('so loai nhac ban da chon la: '+dem(document.FormChon.LoaiNhac))">
+		
+
+	</form>
 	<SCRIPT>
 		var a = document.getElementById("a");
 		var b = document.getElementById("b");
@@ -21,10 +41,19 @@
 		for(i=0;i<10;i++){
 			sum*=mang[i];
 		}
-		function tong(a,b){
+
+		function dem(a){
+			var tong=0;
+			for(var i=0;i<7;i++){
+				if(a.options[i].selected == true){
+					tong++;
+				}
+			}
+			return tong;
+		}
+		function tong(){
 			alert(Number(a.value)+Number(b.value));
 			alert(sum);
-
 		}
 	</SCRIPT>
 
