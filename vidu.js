@@ -1,0 +1,1 @@
+document.write("Text lay tu file vidu.js")

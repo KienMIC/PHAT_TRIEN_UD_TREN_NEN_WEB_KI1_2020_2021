@@ -5,6 +5,17 @@
 		<?php echo "TEST php";  ?>
 	</title>
 </head>
+<SCRIPT LANGUAGE="JavaScript">
+		function dem(a){
+		var tong = 0;
+		for(var i=0;i<a.options.length; i++)
+		{
+		if(a.options[i].selected == true)
+		tong ++;
+		}
+		return tong;
+		}
+	</SCRIPT>
 <body>
 	<h2>KẾT QUẢ CỦA PHÉP TÍNH 5+6=</h2>
 			<?php $a = 5;$b = 6;echo $a+$b; ?>
@@ -42,15 +53,6 @@
 			sum*=mang[i];
 		}
 
-		function dem(a){
-			var tong=0;
-			for(var i=0;i<7;i++){
-				if(a.options[i].selected == true){
-					tong++;
-				}
-			}
-			return tong;
-		}
 		function tong(){
 			alert(Number(a.value)+Number(b.value));
 			alert(sum);
