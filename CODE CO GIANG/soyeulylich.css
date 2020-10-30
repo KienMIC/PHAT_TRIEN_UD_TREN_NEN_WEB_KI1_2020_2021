@@ -1,0 +1,91 @@
+html{
+
+}
+
+body{
+    background-color: black;
+}
+
+.page{
+    background-color: white;
+}
+
+.header{
+    height: 200px;
+    background-image: url('assets//header_bg.png');
+}
+
+.header .section {
+    position: relative;
+    margin-left: 35px;
+    margin-right: 35px;
+    padding-top: 35px;
+}
+
+.header .section .photo img{
+    position: absolute;
+    width: 100px;
+    height: auto;
+    left: 20px;
+}
+
+.header .maingroup{
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.header .subgroup{
+    padding: 10px;
+}
+
+.header .section .info{
+    position: absolute;
+    background-color: gainsboro;
+    left: 150px;
+    right: 75px;
+}
+
+.header .info li{
+    list-style: none;
+}
+
+
+.section{
+    border-top: 1px solid;
+    border-color: silver;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    display: flex
+}
+
+.section .first{
+    width: 25%;
+}
+
+.first span{
+    font-size: 16;
+    font-weight: bold;
+    color: skyblue;
+}
+
+.section .second {
+    width: 75%;
+}
+
+.simple_list li {
+    list-style: none;
+}
+
+.item_style_1 .title{
+    font-weight: bold;
+}
+
+.item_style_1 .description {
+    font-style: italic;
+}
+
+.item_style_1 .note {
+    font-weight: bold;
+    text-align: right;
+}
