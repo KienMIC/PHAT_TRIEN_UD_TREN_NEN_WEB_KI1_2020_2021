@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #333;
+}
+.menu{
+    background-color: #1f568b;
+    text-align: center;
+
+}
+.menu ul li{
+    display: inline-table;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+}
+.menu ul li a{
+    color: #f1f1f1;
+    text-decoration: none;
+    display: block;
+}
+.menu ul li a:hover{
+    background-color: #f1f1f1;
+    color: #333;
+}
+.menu ul li >.submenu{
+    position: absolute;
+    display: none;
+}
+
+.menu ul li:hover .submenu{
+    display: block;
+    background-color:#1f568b ;
+
+}

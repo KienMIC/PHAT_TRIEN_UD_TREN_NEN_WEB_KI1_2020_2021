@@ -14,7 +14,8 @@
 .sanpham{
     width: 255px;
     height: 190px;
-    float: left;
+    float: right;
+    border: solid 0.1px black;
 }
 .trai{
     width: 115px;
